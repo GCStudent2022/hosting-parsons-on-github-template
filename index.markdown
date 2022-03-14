@@ -133,7 +133,7 @@ Rearrange the blocks to create Python code to calculate the valid price.
 </script>
 
 
-# temp - what is different!
+# temp - improved - indents should work
 <div id="parson5-sortableTrash" class="sortable-code"></div> 
 <div id="parson5-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
