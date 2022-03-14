@@ -5,6 +5,47 @@
 layout: default
 title: Multiple Parson's Problems on One Page
 ---
+
+# Greycourt - parson problems
+
+<div id="parson1-sortableTrash" class="sortable-code"></div> 
+<div id="parson1-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="parson1-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="parson1-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "if num &gt; 0:\n" +
+    "    print(&quot;Positive number&quot;)\n" +
+    "elif num == 0:\n" +
+    "    print(&quot;Zero&quot;)\n" +
+    "else:\n" +
+    "    print(&quot;Negative number&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "parson1-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#parson1-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#parson1-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
+
 # Parsons Practice
 
 ## Parsons 1 (Line Based Grader)
