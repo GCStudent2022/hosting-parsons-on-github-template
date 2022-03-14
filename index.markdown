@@ -146,7 +146,7 @@ Rearrange the blocks to create Python code to calculate the valid price.
   var initial = "price = 20\n" +
     "if age&lt; 18:\n" +
     "	print(&quot;child discount applied&quot;)\n" +
-    "    price = price - 8\n" +
+    "	price = price - 8\n" +
     "else:\n" +
     "	print(&quot;full price&quot;)\n" +
     "print(&quot;You must pay&quot;, price, &quot;pounds&quot;)";
@@ -158,8 +158,7 @@ Rearrange the blocks to create Python code to calculate the valid price.
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "parson5-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
