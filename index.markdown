@@ -83,7 +83,7 @@ rearrange the code to determine whether the number is zero, positive or negative
 })(); 
 </script>
 
-# Calculate the price
+## Calculate the price
 Rearrange the blocks to create Python code to calculate the valid price.  
 * The full price is £20.  
 * If the age is less than 18 then
