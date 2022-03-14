@@ -1,5 +1,10 @@
+# Greycourt Parson Puzzles
+Rearrange the blocks provided to create valid Python code.
+Don't forget to indent code inside if / elif / else statements.
 
-## Greycourt - rearrange the code to determine whether the number is positive or negative
+
+## Positive or negative
+Rearrange the code to determine whether the number is positive or negative
 <div id="parson2-sortableTrash" class="sortable-code"></div> 
 <div id="parson2-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -37,7 +42,8 @@
 })(); 
 </script>
 
-## Greycourt - rearrange the code to determine whether the number is zero, positive or negative
+## Zero, positive or negative
+rearrange the code to determine whether the number is zero, positive or negative
 <div id="parson3-sortableTrash" class="sortable-code"></div> 
 <div id="parson3-sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
