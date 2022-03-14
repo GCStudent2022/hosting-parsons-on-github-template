@@ -104,7 +104,8 @@ Rearrange the blocks to create Python code to calculate the valid price.
 (function(){
   var initial = "price = 20\n" +
     "if age&lt; 18:\n" +
-    "	print(&quot;child discount applied&quot;)\nprice = price - 8\n" +
+    "	print(&quot;child discount applied&quot;)\n" +
+    "   price = price - 8\n" +
     "else:\n" +
     "	print(&quot;full price&quot;)\n" +
     "print(&quot;You must pay&quot;, price, &quot;pounds&quot;)";
