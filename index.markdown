@@ -131,3 +131,45 @@ Rearrange the blocks to create Python code to calculate the valid price.
   }); 
 })(); 
 </script>
+
+
+# temp - what is different!
+<div id="parson5-sortableTrash" class="sortable-code"></div> 
+<div id="parson5-sortable" class="sortable-code"></div> 
+<div style="clear:both;"></div> 
+<p> 
+    <input id="parson5-feedbackLink" value="Get Feedback" type="button" /> 
+    <input id="parson5-newInstanceLink" value="Reset Problem" type="button" /> 
+</p> 
+<script type="text/javascript"> 
+(function(){
+  var initial = "price = 20\n" +
+    "if age&lt; 18:\n" +
+    "	print(&quot;child discount applied&quot;)\n" +
+    "    price = price - 8\n" +
+    "else:\n" +
+    "	print(&quot;full price&quot;)\n" +
+    "print(&quot;You must pay&quot;, price, &quot;pounds&quot;)";
+  var parsonsPuzzle = new ParsonsWidget({
+    "sortableId": "parson5-sortable",
+    "max_wrong_lines": 10,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
+    "exec_limit": 2500,
+    "can_indent": true,
+    "x_indent": 50,
+    "lang": "en",
+    "show_feedback": true,
+    "trashId": "parson5-sortableTrash"
+  });
+  parsonsPuzzle.init(initial);
+  parsonsPuzzle.shuffleLines();
+  $("#parson5-newInstanceLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.shuffleLines(); 
+  }); 
+  $("#parson5-feedbackLink").click(function(event){ 
+      event.preventDefault(); 
+      parsonsPuzzle.getFeedback(); 
+  }); 
+})(); 
+</script>
